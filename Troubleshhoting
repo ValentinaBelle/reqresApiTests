@@ -1,0 +1,5 @@
+🔵 If dotenv not loading API key
+
+🔵 Ensure your .env file is in the project root
+🔵 Check that YOUR_API_KEY= is spelled correctly in the .env file
+🔵 Verify the .env file is not in .gitignore (it should be, for security)

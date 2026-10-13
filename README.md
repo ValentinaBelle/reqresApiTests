@@ -1,3 +1,4 @@
+Что входит в тесты:
 ReqRes API testing includes:
 
 🔵 Create User — POST request with user data validation
@@ -5,4 +6,5 @@ ReqRes API testing includes:
 🔵 Missing Field Validation — Tests for missing job and name fields
 🔵 Invalid API Key — Authentication error handling
 
-The ReqRes mock API has limited validation. Some tests (like missing field validation) may not behave exactly like a production API.
+The ReqRes mock API has limited validation. 
+Some tests (like missing field validation) may not behave exactly like a production API.

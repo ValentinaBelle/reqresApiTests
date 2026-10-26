@@ -6,13 +6,13 @@ from dotenv import load_dotenv
 # загружаем ключ
 load_dotenv()
 
-REGRES_KEY = os.getenv('YOUR_API_KEY')
+REQRES_KEY = os.getenv('YOUR_API_KEY')
 # адрес API
 BASE_URL = "https://reqres.in/api"
 
 headers = {
     'Content-Type': 'application/json',
-    'x-api-key': REGRES_KEY}
+    'x-api-key': REQRES_KEY}
 
 # создаем тестового пользователя
 def test_create_user():
@@ -41,7 +41,7 @@ def test_create_user_missing_name_field():
     print(f'Status: {resp.status_code}')
     print(f'Response: {resp.text}')
     assert resp.status_code == 422
-    #ReqRes does not validate like the real API but the first tests work fine
+    #ReqRes не проводит валидацию как боевой API, что очевидно
 
 def test_wrong_api_key():
     wrong_headers = {
